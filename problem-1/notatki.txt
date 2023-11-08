@@ -1,0 +1,23 @@
+Problem 1a:
+
+1. miesieczne dane w Polsce seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.S.UNEHRT.TOTAL0.15_74.T
+2. miesieczne dane w Polsce not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.T
+
+Problem 1b:
+
+1. miesieczne dane we Francji seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.FR.S.UNEHRT.TOTAL0.15_74.T
+2. miesieczne dane we Francji not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.FR.N.UNEHRT.TOTAL0.15_74.T
+
+3. miesieczne dane w Niemczech seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.DE.S.UNEHRT.TOTAL0.15_74.T
+4. miesieczne dane w Niemczech not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.DE.N.UNEHRT.TOTAL0.15_74.T
+
+5. miesieczne dane w Czechach seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.CZ.S.UNEHRT.TOTAL0.15_74.T
+6. miesieczne dane w Czechach not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.CZ.N.UNEHRT.TOTAL0.15_74.T
+
+7. miesieczne dane na Słowacji seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.SK.S.UNEHRT.TOTAL0.15_74.T
+8. miesieczne dane na Słowacji not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.SK.N.UNEHRT.TOTAL0.15_74.T
+
+Problem 1c:
+
+1. Dane dla kobiet: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.F
+2. Dane dla mężczyzn: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.M
