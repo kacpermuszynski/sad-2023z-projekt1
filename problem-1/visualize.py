@@ -109,7 +109,7 @@ def problem_1c():
 
     _, ax = plt.subplots()
     plt.plot(poland_man_total['time_period'], poland_man_total['unemployment_rate'], label ='Poland man not adjusted')
-    plt.plot(poland_woman_total['time_period'], poland_woman_total['unemployment_rate'], label ='Poland woman adjusted')
+    plt.plot(poland_woman_total['time_period'], poland_woman_total['unemployment_rate'], label ='Poland woman not adjusted')
 
     ax.set_ylabel('Unemployment rate')
     ax.set_xlabel('Year')
@@ -163,8 +163,6 @@ def problem_1c():
     ax.margins(x=0)
 
     _, ax = plt.subplots()
-    abc = values[-1] + values[0]
-    print(abc)
     ax.boxplot([values[-1] + values[0] + values[1], values[2] + values[3] + values[4]])
     ax.set_ylabel('Unemployment rate difference')
     ax.set_xlabel('Season')
