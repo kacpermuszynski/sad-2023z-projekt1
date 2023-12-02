@@ -64,7 +64,7 @@ def problem_1a():
     ax.set_ylabel('Różnica w stopie bezrobocia')
     ax.set_xlabel('Miesiąc')
     ax.yaxis.grid(True)
-    months_to_polish = {'Jan':'Styczeń', 'Feb':'Luty', 'Mar':'Marzec', 'Apr':'Kwiecień', 'May':'May', 'Jun':'Czerwiec', 'Jul':'Lipiec', 'Aug':'Sierpień', 'Sep':'Wrzesień', 'Oct':'Październik', 'Nov':'Listopad', 'Dec':'Grudzień'}
+    months_to_polish = {'Jan':'Styczeń', 'Feb':'Luty', 'Mar':'Marzec', 'Apr':'Kwiecień', 'May':'Maj', 'Jun':'Czerwiec', 'Jul':'Lipiec', 'Aug':'Sierpień', 'Sep':'Wrzesień', 'Oct':'Październik', 'Nov':'Listopad', 'Dec':'Grudzień'}
     plt.title("Stopa bezrobocia w Polsce")
     plt.xticks([x+1 for x in range(12)], [months_to_polish[key] for key in keys], rotation=45)
     ax.margins(x=0)
@@ -144,7 +144,7 @@ def problem_1c():
     plt.title("Różnica w stopie bezrobocia w Polsce bez korekcji sezonowości")
     ax.yaxis.grid(True)
     months_to_polish = {'Jan':'stń', 'Feb':'ly', 'Mar':'mrz', 'Apr':'kń', 'May':'mj', 'Jun':'czc', 'Jul':'lc', 'Aug':'sń', 'Sep':'wń', 'Oct':'pk', 'Nov':'ld', 'Dec':'gń'}
-    months_to_polish = {'Jan':'Styczeń', 'Feb':'Luty', 'Mar':'Marzec', 'Apr':'Kwiecień', 'May':'May', 'Jun':'Czerwiec', 'Jul':'Lipiec', 'Aug':'Sierpień', 'Sep':'Wrzesień', 'Oct':'Październik', 'Nov':'Listopad', 'Dec':'Grudzień'}
+    months_to_polish = {'Jan':'Styczeń', 'Feb':'Luty', 'Mar':'Marzec', 'Apr':'Kwiecień', 'May':'Maj', 'Jun':'Czerwiec', 'Jul':'Lipiec', 'Aug':'Sierpień', 'Sep':'Wrzesień', 'Oct':'Październik', 'Nov':'Listopad', 'Dec':'Grudzień'}
     plt.xticks([x+1 for x in range(12)], [months_to_polish[key] for key in keys], rotation=45)
     ax.margins(x=0)
 
