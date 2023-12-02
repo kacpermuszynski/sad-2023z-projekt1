@@ -1,9 +1,9 @@
-Problem 1a:
+Całokształt bezrobocia w Polsce z korekcją sezonowości i bez:
 
 1. miesieczne dane w Polsce seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.S.UNEHRT.TOTAL0.15_74.T
 2. miesieczne dane w Polsce not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.T
 
-Problem 1b:
+Zmiana bezrobocia w Polsce a w innych krajach:
 
 1. miesieczne dane we Francji seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.FR.S.UNEHRT.TOTAL0.15_74.T
 2. miesieczne dane we Francji not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.FR.N.UNEHRT.TOTAL0.15_74.T
@@ -17,7 +17,11 @@ Problem 1b:
 7. miesieczne dane na Słowacji seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.SK.S.UNEHRT.TOTAL0.15_74.T
 8. miesieczne dane na Słowacji not seasonally adjusted: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.SK.N.UNEHRT.TOTAL0.15_74.T
 
-Problem 1c:
+Różnica poziomu bezrobocia wśród kobiet i mężczyzn osobno w miesiącach zimowych i letnich:
 
 1. Dane dla kobiet: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.F
 2. Dane dla mężczyzn: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_74.M
+
+Różnica poziomu bezrobocia wśród kobiet i mężczyzn w dwóch przedziałach wiekowych:
+1. Dane dla mężczyzn: https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_24.M oraz https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.25_74.M
+2. Dane dla kobiet:   https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.15_24.F oraz https://data.ecb.europa.eu/data/datasets/LFSI/LFSI.M.PL.N.UNEHRT.TOTAL0.25_74.F
