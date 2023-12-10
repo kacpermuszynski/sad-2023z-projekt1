@@ -9,11 +9,11 @@ close(zz)
 
 # Ustawienie progu detekcji impulsów na 0.9998 kwantyla
 threshold = quantile(v, 0.99985)
-
+print(threshold)
 print(v[1:10])
-plot(v[1:100000], type='l')     # dłuższy fragment
+plot(v[1:100000], type='l', xlab="Indeks", ylab="Natężenie")     # dłuższy fragment
 idx = 67650:67900;
-plot(idx, v[idx],type='l')# jeden impuls - aby zobaczyć kształt impulsów
+plot(idx, v[idx],type='l', xlab="Indeks", ylab="Natężenie")# jeden impuls - aby zobaczyć kształt impulsów
 
 # Zadanie 2
 
@@ -29,11 +29,11 @@ non_impulse_indices <- setdiff(1:length(v), impulse_indices)
 idx_max = length(v)/20
 v_part = v[0 : idx_max]
 impulse_indices_part = impulse_indices[impulse_indices <= idx_max]
-plot(v_part, type = 'l', main = "Sygnał z wykrytymi impulsami")
+plot(v_part, type = 'l', main = "Sygnał z wykrytymi impulsami", xlab="Indeks", ylab="Natężenie")
 points(impulse_indices_part, v[impulse_indices_part], col = 'blue', pch = 16)
 
 idx = 67650:67900;
-plot(idx, v[idx],type='l')# jeden impuls - aby zobaczyć kształt impulsów
+plot(idx, v[idx],type='l', xlab="Indeks", ylab="Natężenie")# jeden impuls - aby zobaczyć kształt impulsów
 impulse_indices2 = impulse_indices[impulse_indices >= 67650]
 impulse_indices2 = impulse_indices2[impulse_indices2 <= 67900]
 points(impulse_indices2, v[impulse_indices2], col = 'blue', pch = 16)
@@ -43,8 +43,8 @@ points(impulse_indices2, v[impulse_indices2], col = 'blue', pch = 16)
 non_impulse_signal <- v[non_impulse_indices]
 
 # Wykres histogramu
-hist(non_impulse_signal, main="Histogram Sygnału bez Impulsów", xlab="Wartość", ylab="Liczebność", col="lightblue")
-boxplot(non_impulse_signal, main="Wykres pudełkowy Sygnału bez Impulsów", xlab="Wartość", ylab="Liczebność", col="lightblue")
+hist(non_impulse_signal, main="Histogram Sygnału bez Impulsów", xlab="Natężenie", ylab="Liczebność", col="lightblue")
+boxplot(non_impulse_signal, main="Wykres pudełkowy Sygnału bez Impulsów", xlab="Natężenie", ylab="Liczebność", col="lightblue")
 
 #b)Badanie rozkładu odstępów czasu między impulsami
 
