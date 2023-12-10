@@ -61,10 +61,10 @@ non_impulse_signal <- v[non_impulse_indices]
 
 # Oblicz średnią i odchylenie standardowe sygnału
 mean_signal <- mean(non_impulse_signal)
-print("Srednia sygnalu")
+print("Srednia sygnalu bez impulsow")
 print(mean_signal)
 sd_signal <- sd(non_impulse_signal)
-print("Odchylenie standardowe sygnalu")
+print("Odchylenie standardowe sygnalu bez impulsow")
 print(sd_signal)
 
 # Generuj sekwencję liczb dla osi x
