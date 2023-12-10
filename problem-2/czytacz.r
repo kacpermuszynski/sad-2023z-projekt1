@@ -9,12 +9,12 @@ close(zz)
 
 print(v[1:10])
 png("problem-2/wykresy/dluzszy_fragment_sygnalu.png")
-plot(v[1:100000], type='l', main='Dluzszy fragment sygnalu', xlab='Przedzial', ylab='Wartosc natezenia') # dluzszy fragment sygnalu
+plot(v[1:100000], type='l', main='Dłuższy fragment sygnału', xlab='Przedział', ylab='Natężenie') # dluzszy fragment sygnalu
 dev.off()
 
 png("problem-2/wykresy/pojedynczy_impuls.png")
 idx = 67650:67900;
-plot(idx, v[idx],type='l', main='Pojedynczy impuls', xlab='Przedzial', ylab='Wartosc natezenia')      # jeden impuls - aby zobaczyć kształt impulsów
+plot(idx, v[idx],type='l', main='Pojedynczy impuls', xlab='Przedział', ylab='Natężenie')      # jeden impuls - aby zobaczyć kształt impulsów
 dev.off()
 
 # Zadanie 2
@@ -38,14 +38,14 @@ idx_max = length(v)/20
 v_part = v[0 : idx_max]
 impulse_indices_part = impulse_indices[impulse_indices <= idx_max]
 png("problem-2/wykresy/jeden-fragment_zaznaczone-impulsy.png")
-plot(v_part, type = 'l', main = "Sygnał z wykrytymi impulsami", xlab="Indeks", ylab="Natężenie")
+plot(v_part, type = 'l', main = "Sygnał z wykrytymi impulsami", xlab="Przedział", ylab="Natężenie")
 points(impulse_indices_part, v[impulse_indices_part], col = 'blue', pch = 16)
 dev.off()
 
 
 idx = 67650:67900;
 png("problem-2/wykresy/fragment_zaznaczone-impulsy.png")
-plot(idx, v[idx],type='l', xlab="Indeks", ylab="Natężenie")# jeden impuls - aby zobaczyć kształt impulsów
+plot(idx, v[idx],type='l', main = "Impuls", xlab="Przedział", ylab="Natężenie")# jeden impuls - aby zobaczyć kształt impulsów
 impulse_indices2 = impulse_indices[impulse_indices >= 67650]
 impulse_indices2 = impulse_indices2[impulse_indices2 <= 67900]
 points(impulse_indices2, v[impulse_indices2], col = 'blue', pch = 16)
@@ -75,13 +75,13 @@ y <- dnorm(x, mean=mean_signal, sd=sd_signal)
 
 # Dodaj dopasowaną funkcję Gaussa do histogramu
 png("problem-2/wykresy/histogram_szumu_gauss.png")
-hist(non_impulse_signal, main="Histogram sygnału bez impulsow z dopasowaniem Gaussa", xlab="Natezenie sygnalu", ylab="Liczebnosc", col="lightblue", freq=FALSE)
+hist(non_impulse_signal, main="Histogram sygnału bez impulsow z dopasowaniem Gaussa", xlab="Natężenie", ylab="Liczebność", col="lightblue", freq=FALSE)
 lines(x, y, col="red")
 dev.off()
 
 
 png("problem-2/wykresy/wykres-pudelkowy-szumu.png")
-boxplot(non_impulse_signal, main="Wykres pudełkowy Sygnału bez Impulsów", xlab="Natężenie", ylab="Liczebność", col="lightblue")
+boxplot(non_impulse_signal, main="Wykres pudełkowy sygnału bez Impulsów", xlab="", ylab="Natężenie", col="lightblue")
 dev.off()
 
 #b)Badanie rozkładu odstępów czasu między impulsami
@@ -97,7 +97,7 @@ time_gaps = time_gaps / 50e6 * 1000  # Przeliczamy na ilość próbek, gdzie 50e
 
 num_breaks <- 30
 png("problem-2/wykresy/histogram_odstepu_czasu.png")
-hist(time_gaps, breaks = num_breaks, main = "Histogram odstępów czasu miedzy impulsami", xlab = "Odstep czasu w ms", ylab = "Liczebnosc", col = "lightgreen")
+hist(time_gaps, breaks = num_breaks, main = "Histogram odstępów czasu miedzy impulsami", xlab = "Odstep czasu w ms", ylab = "Liczebność", col = "lightgreen")
 dev.off()
 
 # Podziel impulsy na grupy
@@ -109,5 +109,5 @@ filtered_max_values <- max_values[max_values >= 0.005 & max_values <= 1]
 
 # Wykreśl histogram maksymalnych impulsów
 png("problem-2/wykresy/max_impulsy_histogram.png")
-hist(filtered_max_values, main = "Histogram of Max Impulses", xlab = "Amplitude", ylab = "Frequency", col = "lightblue")
+hist(filtered_max_values, main = "Histogram maksymalnych impulsów", xlab = "Natężenie", ylab = "Liczebność", col = "lightblue")
 dev.off()
